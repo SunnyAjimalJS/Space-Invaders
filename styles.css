@@ -1,0 +1,48 @@
+* {
+  font-family: Helvetica;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#hero {
+  background-image: url(./Assets/small-spaceship-clipart-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 450px;
+  left: 550px;
+}
+
+#alien {
+  background-image: url(./Assets/Alien-head.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid white;
+  margin: 0 auto;
+  height: 500px;
+  width: 1200px;
+  background-image: url(./Assets/84303.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
