@@ -15,6 +15,7 @@ h1 {
     background-image: url(./Assets/small-spaceship-clipart-3.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: center;
     position: absolute;
     top: 450px;
     left: 550px;
@@ -45,4 +46,18 @@ div {
     border: 2px solid white; 
     width: 100px;
     height: 100px; 
+}
+
+//creating the dynamic missile
+
+.missile{
+    background-image: url(./Assets/Missile2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    height: 30px;
+    width: 20px;
 }

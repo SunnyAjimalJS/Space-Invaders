@@ -12,12 +12,15 @@ document.onkeydown = (e) => {
     console.log(e);
     if (e.keyCode === 37){
         console.log("LEFT")
-        hero.left = hero.left - 10;
+        hero.left = hero.left - 20;
         heroElement.style.left = hero.left + "px";
     } else if (e.keyCode === 39){
         console.log("RIGHT")
-        hero.left = hero.left + 10;
+        hero.left = hero.left + 20;
         heroElement.style.left = hero.left + "px";
+    } else if (e.keyCode === 32){
+        console.log("FIRE")
     }
-    
+
+
 };
