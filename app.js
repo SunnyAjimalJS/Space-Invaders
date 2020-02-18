@@ -1,6 +1,7 @@
 //to make the ship move left and right
 
 const heroElement = document.getElementById("hero");
+let missiles = []
 
 const hero = {
     left: 550,
@@ -19,8 +20,37 @@ document.onkeydown = (e) => {
         hero.left = hero.left + 20;
         heroElement.style.left = hero.left + "px";
     } else if (e.keyCode === 32){
-        console.log("FIRE")
+        missiles.push({
+            left: hero.left + 20,
+            top: hero.top
+        })
     }
+    drawMissiles();
+}
 
+//To get the Missiles moving
+function drawMissiles() {
 
-};
+    document.getElementById('missiles').innerHTML = "";
+    for (let missile = 0; missile < missiles.length; missile = missile + 1) {
+        document.getElementById('missiles').innerHTML +=
+        `<div class='missile' style='left:${missiles[missile].left}px; top${missiles[missile].top}px;'></div>`
+        missiles[missile].left
+        missiles[missile].top
+       //this will tell the brower to search for each missile out of an array of missiles
+        }
+}
+
+function moveMissiles() {
+    for (let missile = 0; missile < missiles.length; missile = missile + 1) {
+        missiles[missile].top =  missiles[missile].top -5;
+}
+}
+
+// Game loop to make the missiles move and drawn again 
+function gameLoop() {
+    setTimeout(gameLoop, 1000)
+    moveMissiles();
+    drawMissiles()
+}
+gameLoop();
