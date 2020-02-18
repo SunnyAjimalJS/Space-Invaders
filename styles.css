@@ -21,7 +21,7 @@ h1 {
 }
 
 .alien {
-  background-image: url(./Assets/Alien-head.png);
+  background-image: url(./Assets/alien-head-2.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
