@@ -21,15 +21,16 @@ h1 {
   left: 550px;
 }
 
-#aliens {
+.alien {
   background-image: url(./Assets/alien-head-2.png);
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
   top: 100px;
   left: 550px;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
+  float: left;
+  margin-left: 100px;
 }
 
 section {

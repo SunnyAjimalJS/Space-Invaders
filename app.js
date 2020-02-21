@@ -2,7 +2,7 @@
 
 const heroElement = document.getElementById("hero");
 let missiles = [];
-let alienElement = document.getElementById("aliens");
+let playing = false;
 
 const hero = {
   left: 550,
@@ -21,6 +21,7 @@ document.onkeydown = e => {
     hero.left = hero.left + 20;
     heroElement.style.left = hero.left + "px";
   } else if (e.keyCode === 32) {
+    playing = true;
     missiles.push({
       left: hero.left + 20,
       top: hero.top
@@ -48,30 +49,26 @@ function moveMissiles() {
   }
 }
 
-var x = 0;
-function collide() {
-  if (missiles.length > 0) {
-    // let missile = document.querySelector(".missile").getBoundingClientRect()
-    // console.log("missile", missile.x);
-    // let aliens = document.getElementById("aliens").getBoundingClientRect()
-    // console.log("alien", aliens.x, aliens.y);
-
-    if 
-    (document.querySelector(".missile").getBoundingClientRect().top <=
-    document.getElementById("aliens").getBoundingClientRect().bottom) {
-        $(aliens).hide();
-        // for each missile in missiles
-        //      for each alien in aliens
-        //          do collision check here
-        //          if there is one, destroy the alien[i] and missile[j]
-        //remove the missile and aliens
-      console.log("COLLISIONNNNNNNN!!!!");
-    }
-  }
+const hit = (alien) => {
+  playing = false;
+  $(alien).hide();
+  // STOP  LISTENING
 }
 
-//New Collide function 
-/* let rect1 = {x: } */
+//FUNCTION FOR COLLISIONS 
+function collide() {
+  const missileElements = document.querySelectorAll(".missile");
+  const aliens = document.querySelectorAll(".alien");
+  missileElements.forEach((missile) => {
+    aliens.forEach((alien) => {
+      if (missile.getBoundingClientRect().top <= alien.getBoundingClientRect().bottom
+      && missile.getBoundingClientRect().left >= alien.getBoundingClientRect().left
+      && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right) {
+        hit(alien);
+      }
+    })
+  })
+}     
 
 // Game loop to make the missiles move and drawn again
 function gameLoop() {
