@@ -10,7 +10,7 @@ body {
 h1 {
   font-family: "Monoton";
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   margin-bottom: 5px;
 }
 
@@ -20,7 +20,7 @@ h1 {
   background-repeat: no-repeat;
   background-position-x: center;
   position: absolute;
-  top: 500px;
+  top: 520px;
   left: 550px;
 }
 
