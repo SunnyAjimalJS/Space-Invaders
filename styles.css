@@ -8,7 +8,10 @@ body {
 }
 
 h1 {
+  font-family: "Monoton";
   text-align: center;
+  font-size: 60px;
+  margin-bottom: 5px;
 }
 
 #hero {
@@ -17,7 +20,7 @@ h1 {
   background-repeat: no-repeat;
   background-position-x: center;
   position: absolute;
-  top: 450px;
+  top: 500px;
   left: 550px;
 }
 
@@ -30,7 +33,8 @@ h1 {
   height: 70px;
   width: 70px;
   float: left;
-  margin-left: 100px;
+  margin: 10px 20px 0px 20px;
+  margin-left: 40px;
 }
 
 section {
@@ -48,12 +52,16 @@ section {
 div {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid white;
   width: 100px;
   height: 100px;
 }
 
 #missiles {
+  height: 500px;
+  width: 1200px;
+}
+
+.aliens2 {
   height: 500px;
   width: 1200px;
 }
