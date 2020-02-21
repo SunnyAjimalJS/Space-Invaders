@@ -64,6 +64,13 @@ div {
 .aliens2 {
   height: 500px;
   width: 1200px;
+  padding: 60px;
+}
+
+.aliens3 {
+  height: 500px;
+  width: 1200px;
+  padding: 60px;
 }
 
 .missile {
