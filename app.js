@@ -63,7 +63,8 @@ function collide() {
     aliens.forEach((alien) => {
       if (missile.getBoundingClientRect().top <= alien.getBoundingClientRect().bottom
       && missile.getBoundingClientRect().left >= alien.getBoundingClientRect().left
-      && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right) {
+      && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right
+      && missile.getBoundingClientRect().width <= alien.getBoundingClientRect().width) {
         hit(alien);
       }
     })
