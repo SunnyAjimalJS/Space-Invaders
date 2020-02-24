@@ -51,8 +51,8 @@ function moveMissiles() {
 }
 
 const hit = (alien) => {
-  playing = false;
   $(alien).hide();
+  missiles = [];
   // STOP  LISTENING
 }
 
@@ -60,16 +60,17 @@ const hit = (alien) => {
 function collide() {
   const missileElements = document.querySelectorAll(".missile");
   const aliens = document.querySelectorAll(".alien");
-  missileElements.forEach((missile) => {
-    aliens.every((alien) => {
+  for (let missile of missileElements) {
+    for (let alien of aliens) {
       if (missile.getBoundingClientRect().top <= alien.getBoundingClientRect().bottom
       && missile.getBoundingClientRect().left >= alien.getBoundingClientRect().left
       && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right
-      && missile.getBoundingClientRect().width <= alien.getBoundingClientRect().width) {
-        hit(alien);
+      && missile.getBoundingClientRect().width <= alien.getBoundingClientRect().width
+      && playing) {
+        return hit(alien);
       }
-    })
-  }) 
+    }
+  }
 }
 /* 
   function collide(aliens, missileElements) {
