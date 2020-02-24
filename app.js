@@ -2,6 +2,7 @@
 
 const heroElement = document.getElementById("hero");
 let missiles = [];
+let aliens = [];
 let playing = false;
 
 const hero = {
@@ -60,7 +61,7 @@ function collide() {
   const missileElements = document.querySelectorAll(".missile");
   const aliens = document.querySelectorAll(".alien");
   missileElements.forEach((missile) => {
-    aliens.forEach((alien) => {
+    aliens.every((alien) => {
       if (missile.getBoundingClientRect().top <= alien.getBoundingClientRect().bottom
       && missile.getBoundingClientRect().left >= alien.getBoundingClientRect().left
       && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right
@@ -68,8 +69,22 @@ function collide() {
         hit(alien);
       }
     })
-  })
-}     
+  }) 
+}
+/* 
+  function collide(aliens, missileElements) {
+    let missileElements = document.querySelectorAll(".missile");
+    const aliens = document.querySelectorAll(".alien");
+      for (let i = 0; i < 10; i++) {
+        if (missile.getBoundingClientRect().top <= alien.getBoundingClientRect().bottom
+        && missile.getBoundingClientRect().left >= alien.getBoundingClientRect().left
+        && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right
+        && missile.getBoundingClientRect().width <= alien.getBoundingClientRect().width) {
+          $(aliens).hide();
+        }
+      }
+    } */
+  
 
 // Game loop to make the missiles move and drawn again
 function gameLoop() {
