@@ -51,7 +51,7 @@ function moveMissiles() {
 }
 
 const hit = (alien) => {
-  $(alien).hide();
+  $(alien).removeClass().addClass("removeAlien");
   missiles = [];
   // STOP  LISTENING
 }

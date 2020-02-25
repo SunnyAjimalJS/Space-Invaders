@@ -34,15 +34,24 @@ h1 {
   left: 550px;
   height: 80px;
   width: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 10px 20px 0px 20px;
-  margin-left: 40px;
+  /* display: flex;
+    flex-direction: row; */
+  /*   margin: 10px 20px 0px 20px;
+    margin-left: 40px; */
+}
+
+.removeAlien {
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 100px;
+  left: 550px;
+  height: 80px;
+  width: 80px;
+  /* display: flex;
+    flex-direction: row; */
+  /*   margin: 10px 20px 0px 20px;
+    margin-left: 40px; */
 }
 
 .aliens2 {
@@ -55,6 +64,10 @@ h1 {
           flex-direction: row;
   height: 500px;
   width: 1200px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'alien alien alien alien';
+  grid-gap: 0px;
 }
 
 section {
