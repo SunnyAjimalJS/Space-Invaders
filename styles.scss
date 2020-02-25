@@ -22,7 +22,7 @@ h1 {
     background-position-x: center;
     position: absolute;
     top: 475px;
-    left: 550px;
+    left: 600px;
     height: 200px;
     width: 200px;
 }
@@ -33,9 +33,10 @@ h1 {
     background-repeat: no-repeat;
     top: 100px;
     left: 550px;
-    height: 70px;
-    width: 70px;
-    float: left;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
     margin: 10px 20px 0px 20px;
     margin-left: 40px;
 
@@ -44,6 +45,12 @@ h1 {
     // grid-gap: 10px;
 }
 
+.aliens2 {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1200px;
+}
 section {
     box-sizing: border-box;
     border: 2px solid white;
@@ -67,19 +74,6 @@ div {
 #missiles{ 
     height: 500px;
     width: 1200px;
-}
-
-.aliens2 {
-    height: 500px;
-    width: 1200px;
-    padding: 70px;
-}
-
-.aliens3 {
-    height: 500px;
-    width: 1200px;
-    padding: 80px;
-
 }
 
 .missile{
