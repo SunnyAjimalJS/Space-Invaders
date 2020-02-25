@@ -10,7 +10,7 @@ body{
 h1 {
     font-family: 'Monoton', ;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     margin-bottom: 5px;
  
 }
@@ -21,20 +21,21 @@ h1 {
     background-repeat: no-repeat;
     background-position-x: center;
     position: absolute;
-    top: 475px;
-    left: 600px;
-    height: 200px;
-    width: 200px;
+    top: 410px;
+    left: 520px;
+    height: 225px;
+    width: 225px;
 }
 
 .alien {
     background-image: url(./Assets/alien-head-2.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     top: 100px;
     left: 550px;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
+    margin: 20px;
     /* display: flex;
     flex-direction: row; */
   /*   margin: 10px 20px 0px 20px;
@@ -42,44 +43,29 @@ h1 {
 }
 
 .removeAlien {
-    background-color: white;
+    background-image: url(./Assets/ShyEnlightenedCirriped-max-1mb.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    top: 100px;
-    left: 550px;
-    height: 80px;
-    width: 80px;
-    /* display: flex;
-    flex-direction: row; */
-  /*   margin: 10px 20px 0px 20px;
-    margin-left: 40px; */
+    height: 130px;
+    width: 130px;
 }
 
 .aliens2 {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 400px;
     width: 1200px;
-    display: grid;
-    grid-template-areas: 'alien alien alien alien';
-    grid-gap: 0px;
 }
+
 section {
     box-sizing: border-box;
     border: 2px solid white;
     margin: 0 auto; 
-    height: 500px;
+    height: 460px;
     width: 1200px;
     background-image: url(./Assets/84303.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-div {
-    box-sizing: border-box;
-    // border: 2px solid white; 
-    width: 100px;
-    height: 100px; 
 }
 
 //creating the dynamic missile
@@ -96,7 +82,6 @@ div {
     background-position-x: center;
     position: absolute;
     top: 250px;
-    margin-left: 60px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }

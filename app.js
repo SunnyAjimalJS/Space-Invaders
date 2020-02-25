@@ -24,7 +24,7 @@ document.onkeydown = e => {
   } else if (e.keyCode === 32) {
     playing = true;
     missiles.push({
-      left: hero.left + 20,
+      left: hero.left + 70,
       top: hero.top
     });
   }
