@@ -1,0 +1,9 @@
+language: node_js
+
+deploy: 
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github_token: 5ddfd90299479d2b2ad0681f9b703748dbb0f7bb
+  on: 
+    branch: master

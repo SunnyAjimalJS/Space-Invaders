@@ -12,7 +12,6 @@ const hero = {
 
 document.onkeydown = e => {
   e.preventDefault();
-  console.log(e);
   if (e.keyCode === 37) {
     console.log("LEFT");
     hero.left = hero.left - 20;
@@ -50,6 +49,7 @@ function moveMissiles() {
   }
 }
 
+
 const hit = (alien) => {
   $(alien).removeClass().addClass("removeAlien");
   missiles = [];
@@ -72,20 +72,19 @@ function collide() {
     }
   }
 }
-/* 
-  function collide(aliens, missileElements) {
-    let missileElements = document.querySelectorAll(".missile");
-    const aliens = document.querySelectorAll(".alien");
-      for (let i = 0; i < 10; i++) {
-        if (missile.getBoundingClientRect().top <= alien.getBoundingClientRect().bottom
-        && missile.getBoundingClientRect().left >= alien.getBoundingClientRect().left
-        && missile.getBoundingClientRect().right <= alien.getBoundingClientRect().right
-        && missile.getBoundingClientRect().width <= alien.getBoundingClientRect().width) {
-          $(aliens).hide();
-        }
-      }
-    } */
-  
+
+// Displaying instructions: 
+const instructions =  `<div class="instructions">
+<h2>How to play space invaders</h2>
+                      <p>Use the Left or Right arrow keys to move the Spaceship left or right </p>
+                      <p> As soon as you start shooting, the aliens will start moving down to attack you! </p>
+                      <p> Your aim is to strike all of the aliens with missiles before they get your Spaceship! </p>
+                        </div>`;
+
+document.getElementById("instructions").innerHTML += instructions;
+
+// instructions();
+
 
 // Game loop to make the missiles move and drawn again
 function gameLoop() {

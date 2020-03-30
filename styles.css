@@ -32,13 +32,11 @@ h1 {
   background-repeat: no-repeat;
   top: 100px;
   left: 550px;
-  height: 90px;
-  width: 90px;
-  margin: 20px;
+  height: 100px;
+  width: 100px;
   /* display: flex;
     flex-direction: row; */
-  /*   margin: 10px 20px 0px 20px;
-    margin-left: 40px; */
+  margin: 10px 10px 0px 20px;
 }
 
 .removeAlien {
@@ -87,5 +85,13 @@ section {
   top: 250px;
   height: 40px;
   width: 40px;
+}
+
+.instructions {
+  color: #ffffff;
+  text-align: center;
+  height: 200px;
+  width: 500px;
+  margin: -300 auto;
 }
 /*# sourceMappingURL=styles.css.map */
