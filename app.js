@@ -83,6 +83,10 @@ const instructions =  `<div class="instructions">
 
 document.getElementById("instructions").innerHTML += instructions;
 
+// 1 - write the onkeydown for spacebar
+// 2- write the empty string for .innerHTML = "" after 
+// TIMER - Add in
+
 // instructions();
 
 
