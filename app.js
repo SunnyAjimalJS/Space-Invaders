@@ -73,19 +73,19 @@ function collide() {
   }
 }
 
-// Displaying instructions: 
-const instructions =  `<div class="instructions">
-<h2>How to play space invaders</h2>
-                      <p>Use the Left or Right arrow keys to move the Spaceship left or right </p>
-                      <p> As soon as you start shooting, the aliens will start moving down to attack you! </p>
-                      <p> Your aim is to strike all of the aliens with missiles before they get your Spaceship! </p>
-                        </div>`;
+// // Displaying instructions: 
+// const instructions =  `<div class="instructions">
+// <h2>How to play space invaders</h2>
+//                       <p>Use the Left or Right arrow keys to move the Spaceship left or right </p>
+//                       <p> As soon as you start shooting, the aliens will start moving down to attack you! </p>
+//                       <p> Your aim is to strike all of the aliens with missiles before they get your Spaceship! </p>
+//                         </div>`;
 
-document.getElementById("instructions").innerHTML += instructions;
+// document.getElementById("instructions").innerHTML += instructions;
 
-// 1 - write the onkeydown for spacebar
-// 2- write the empty string for .innerHTML = "" after 
-// TIMER - Add in
+// // 1 - write the onkeydown for spacebar
+// // 2- write the empty string for .innerHTML = "" after 
+// // TIMER - Add in
 
 // instructions();
 
